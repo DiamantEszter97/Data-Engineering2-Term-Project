@@ -12,5 +12,5 @@ The weather data was collected by API. The data is originated from https://www.n
 Steps to follow:
 1. save sales.csv to C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/ (or other respective location if you have either iOs or Linux)
 2. import dataset to MySQL using sql script in codes folder (if you have other path for your file then replace the path at load data infile)
-3. run the KNIME pipepline in KNIME folder
+3. run the KNIME pipepline in KNIME folder. At MySQL connector, add your Hostname, username and your password. If you would like to use my server, leave it as it is.
 
