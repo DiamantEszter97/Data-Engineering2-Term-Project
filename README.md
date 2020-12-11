@@ -4,7 +4,7 @@ The aim:
 The aim of this analyis to investigate whether there is any relation between e-commerce and weather.
 
 The e-commerce dataset:
-It is a transnational data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail.The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers.
+It is a transnational data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail.The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers. The link for the original data: https://www.kaggle.com/carrie1/ecommerce-data
 
 The weather data:
 The weather data was collected by API. The data is originated from https://www.ncdc.noaa.gov/
