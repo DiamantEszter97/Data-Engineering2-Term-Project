@@ -4,18 +4,18 @@ USE DE2Project;
 
 DROP TABLE IF EXISTS Sales;
 CREATE TABLE Sales 
-(InvoiceNo INT,
-Quantity INT,
-InvoiceDate DATETIME,
+(InvoiceNo INTEGER,
+Quantity INTEGER,
+InvoiceDate DATE,
 UnitPrice DECIMAL(10,2),
-CustomerID INT,
+CustomerID INTEGER,
 Country VARCHAR(255),
 TotalSale DECIMAL(10,2));
 
-LOAD DATA LOCAL INFILE '/home/ozzy/Documents/CEU/DE2/Assignment/Data/Clean/sales.csv'
+LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/sales.csv'
 INTO TABLE Sales
-FIELDS TERMINATED BY ','
-LINES TERMINATED BY '\n'
+FIELDS TERMINATED BY ';'
+LINES TERMINATED BY '\r\n'
 IGNORE 1 LINES
 (InvoiceNo, 
 Quantity, 
@@ -23,4 +23,6 @@ InvoiceDate,
 UnitPrice, 
 CustomerID, 
 Country,
-TotalSale);
+TotalSale)
+set
+InvoiceDate = DATE_FORMAT(InvoiceDate, '%Y-%m-%d');
